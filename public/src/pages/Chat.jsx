@@ -7,6 +7,7 @@ import { allUsersRoute, host } from "../utils/APIRoutes";
 import ChatContainer from "../components/ChatContainer";
 import Contacts from "../components/Contacts";
 import Welcome from "../components/Welcome";
+import bgImg from '../assets/bg.jpeg' 
 
 export default function Chat() {
   const navigate = useNavigate();
@@ -69,7 +70,7 @@ const Container = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #040e42;
+  background-image: url(${bgImg});
   .container {
     height: 85vh;
     width: 85vw;

@@ -105,6 +105,8 @@ const Container = styled.div`
     align-items: center;
     gap: 2rem;
     background-color: #134cfb;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2), 
+                0px 0px 2px rgba(255, 255, 255, 0.4);
     input {
       width: 90%;
       height: 60%;

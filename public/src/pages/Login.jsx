@@ -6,6 +6,7 @@ import Logo from "../assets/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/APIRoutes";
+import bgImg from '../assets/bg.jpeg';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -101,7 +102,7 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #0c2ee5;
+  background-image: url(${bgImg});
   .brand {
     display: flex;
     align-items: center;
@@ -120,7 +121,11 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-image: radial-gradient(circle at top right, #002a80, transparent), radial-gradient(circle at bottom left, #006880, transparent);
+    border-radius: 2rem;
+    background-color:black;
     border-radius: 2rem;
     padding: 5rem;
   }
@@ -138,7 +143,7 @@ const FormContainer = styled.div`
     }
   }
   button {
-    background-color: #1124fc;
+    background-image:linear-gradient(45deg, #009fff, #118711);
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -146,9 +151,10 @@ const FormContainer = styled.div`
     cursor: pointer;
     border-radius: 0.4rem;
     font-size: 1rem;
+    transition: .5s;
     text-transform: uppercase;
     &:hover {
-      background-color: #1205f3;
+      letter-spacing: .2em;
     }
   }
   span {
