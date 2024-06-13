@@ -6,7 +6,7 @@ import Logo from "../assets/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
-import bgImg from '../assets/bg.jpeg' 
+import bgImg from '../assets/bg.png' 
 
 export default function Register() {
   const navigate = useNavigate();

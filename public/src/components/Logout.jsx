@@ -19,6 +19,7 @@ export default function Logout() {
   return (
     <Button onClick={handleClick}>
       <BiPowerOff />
+      <h3>logout</h3>
     </Button>
   );
 }
@@ -29,11 +30,16 @@ const Button = styled.button`
   align-items: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #0386d8;
+  background: radial-gradient(circle at top right, #002a80, transparent), radial-gradient(circle at bottom left, #006880, transparent);
   border: none;
   cursor: pointer;
   svg {
     font-size: 1.3rem;
     color: #ebe7ff;
+  }
+
+  h3 {
+    color: white;
+    padding: 0.3rem;
   }
 `;

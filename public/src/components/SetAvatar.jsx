@@ -109,7 +109,8 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  background-color: #131324;
+  background-color: black;
+  background-image: radial-gradient(circle at top right, #002a80, transparent), radial-gradient(circle at bottom left, #006880, transparent);
   height: 100vh;
   width: 100vw;
 
@@ -140,11 +141,12 @@ const Container = styled.div`
       }
     }
     .selected {
-      border: 0.4rem solid #4e0eff;
+      border: 0.4rem solid #0effc3;
     }
   }
   .submit-btn {
-    background-color: #0c0ff2;
+    background-image:linear-gradient(45deg, #009fff, #118711);
+    transition:.5s;
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -154,7 +156,7 @@ const Container = styled.div`
     font-size: 1rem;
     text-transform: uppercase;
     &:hover {
-      background-color: #1412fc;
+      letter-spacing: .2em;
     }
   }
 `;

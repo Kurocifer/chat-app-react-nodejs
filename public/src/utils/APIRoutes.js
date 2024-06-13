@@ -6,3 +6,7 @@ export const allUsersRoute = `${host}/api/auth/allusers`;
 export const sendMessageRoute = `${host}/api/messages/addmsg`;
 export const recieveMessageRoute = `${host}/api/messages/getmsg`;
 export const setAvatarRoute = `${host}/api/auth/setavatar`;
+export const getGroups = `${host}/api/groups/getUserGroups`;
+export const getGroupMembers = `${host}/api/groups/getGroupMembers`;
+export const createGroup = `${host}/api/groups/creategroup`;
+export const getUserDetails = `${host}/api/auth/getUserDetails`;
